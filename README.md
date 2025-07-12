@@ -14,7 +14,7 @@ docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w
 
 Claude Code Docker 是一个封装了 Anthropic Claude Code CLI 工具的 Docker 镜像。它提供了一个即用型的环境，让您可以在容器中运行 Claude Code，而无需在本地安装 Node.js 和相关依赖。
 
-**🔥 重要提示：本项目默认使用 API 端点 `https://api.moonshot.cn/anthropic`，专为中国大陆用户优化，让您能够顺畅体验 Vibe Coding（Claude Code 的沉浸式 CLI）！**
+**🔥 重要提示：本项目默认使用 API 端点 `https://api.moonshot.cn/anthropic`，这是月之暗面发布的万亿参数模型 Kimi K2 提供的 Anthropic API 兼容服务，让中国大陆用户能够无缝体验 Vibe Coding（Claude Code 的沉浸式 CLI）！**
 
 Claude Code 是 Anthropic 官方的命令行界面工具，可以帮助您：
 - 与 Claude AI 进行交互式编程对话
@@ -93,7 +93,7 @@ docker run --rm -it \
   huangsen365/claude-code claude
 ```
 
-#### 使用代理服务（如 Moonshot）
+#### 使用 Moonshot（Kimi K2 兼容服务）
 ```bash
 docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
 ```
@@ -146,7 +146,7 @@ docker-compose run --rm claude-code
 A: 请访问 [Anthropic Console](https://console.anthropic.com/) 注册并获取 API 密钥。
 
 ### Q: 为什么使用 Moonshot 的 API URL？
-A: Moonshot 提供了 Claude API 的代理服务，可以改善国内访问速度。您也可以使用官方 API 或其他代理服务。
+A: 月之暗面最近发布的万亿参数模型 Kimi K2 兼容了 Anthropic 的 API 格式，使得中国大陆用户可以无缝体验 Claude Code。这不是代理服务，而是直接的兼容实现。
 
 ### Q: 容器退出后数据会丢失吗？
 A: 是的，除非您使用 `-v` 参数挂载了本地目录。建议挂载工作目录和配置目录以持久化数据。

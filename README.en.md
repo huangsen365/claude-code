@@ -14,7 +14,7 @@ docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w
 
 Claude Code Docker is a Docker image that packages Anthropic's Claude Code CLI tool. It provides a ready-to-use environment that allows you to run Claude Code in a container without installing Node.js and related dependencies locally.
 
-**🔥 Important: This project uses the API endpoint `https://api.moonshot.cn/anthropic` by default, optimized for users in mainland China to smoothly experience Vibe Coding (Claude Code's immersive CLI)!**
+**🔥 Important: This project uses the API endpoint `https://api.moonshot.cn/anthropic` by default, which is Moonshot's Kimi K2 trillion-parameter model providing Anthropic API-compatible service, enabling seamless Claude Code experience for users in mainland China!**
 
 Claude Code is Anthropic's official command-line interface tool that helps you:
 - Have interactive programming conversations with Claude AI
@@ -93,7 +93,7 @@ docker run --rm -it \
   huangsen365/claude-code claude
 ```
 
-#### Using Proxy Service (e.g., Moonshot)
+#### Using Moonshot (Kimi K2 Compatible Service)
 ```bash
 docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
 ```
@@ -146,7 +146,7 @@ docker-compose run --rm claude-code
 A: Please visit [Anthropic Console](https://console.anthropic.com/) to register and obtain an API key.
 
 ### Q: Why use Moonshot's API URL?
-A: Moonshot provides a proxy service for Claude API, which can improve access speed in China. You can also use the official API or other proxy services.
+A: Moonshot recently released the trillion-parameter model Kimi K2, which is compatible with Anthropic's API format, allowing users in mainland China to seamlessly experience Claude Code. This is not a proxy service, but a direct compatible implementation.
 
 ### Q: Will data be lost after the container exits?
 A: Yes, unless you mount local directories using the `-v` parameter. It's recommended to mount working and configuration directories to persist data.
