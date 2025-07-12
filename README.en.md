@@ -5,11 +5,7 @@ English | [中文](README.md)
 ## 🚀 Quick Start - One Command
 
 ```bash
-docker run --rm -it \
-  -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" \
-  -w /root \
-  --name my-claude-code \
-  huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
 ```
 
 > 💡 **Note**: You'll be prompted to enter your API Key after running. Please have your Moonshot API Key ready.
@@ -36,11 +32,7 @@ Claude Code is Anthropic's official command-line interface tool that helps you:
 ### 1. Using Docker Hub Image (Recommended)
 
 ```bash
-docker run --rm -it \
-  -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" \
-  -w /root \
-  --name my-claude-code \
-  huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
 ```
 
 ### 2. Building Local Image
@@ -101,11 +93,7 @@ docker run --rm -it \
 
 #### Using Proxy Service (e.g., Moonshot)
 ```bash
-docker run --rm -it \
-  -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" \
-  -w /root \
-  --name my-claude-code \
-  huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
 ```
 
 ## Advanced Configuration

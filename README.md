@@ -5,11 +5,7 @@
 ## 🚀 一键快速体验
 
 ```bash
-docker run --rm -it \
-  -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" \
-  -w /root \
-  --name my-claude-code \
-  huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
 ```
 
 > 💡 **提示**: 运行后会提示输入 API Key，请准备好您的 Moonshot API Key
@@ -36,11 +32,7 @@ Claude Code 是 Anthropic 官方的命令行界面工具，可以帮助您：
 ### 1. 使用 Docker Hub 镜像（推荐）
 
 ```bash
-docker run --rm -it \
-  -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" \
-  -w /root \
-  --name my-claude-code \
-  huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
 ```
 
 ### 2. 构建本地镜像
@@ -101,11 +93,7 @@ docker run --rm -it \
 
 #### 使用代理服务（如 Moonshot）
 ```bash
-docker run --rm -it \
-  -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" \
-  -w /root \
-  --name my-claude-code \
-  huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
 ```
 
 ## 高级配置
