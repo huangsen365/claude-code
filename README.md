@@ -59,7 +59,7 @@ docker run --rm -it \
 
 | 变量名 | 说明 | 默认值 |
 |--------|------|--------|
-| ANTHROPIC_BASE_URL | Claude API 的基础 URL | https://api.anthropic.com |
+| ANTHROPIC_BASE_URL | Claude API 的基础 URL | https://api.moonshot.cn/anthropic |
 | ANTHROPIC_API_KEY | Claude API 密钥（运行时提示输入） | - |
 
 ## 使用说明
