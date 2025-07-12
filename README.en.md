@@ -14,6 +14,8 @@ docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w
 
 Claude Code Docker is a Docker image that packages Anthropic's Claude Code CLI tool. It provides a ready-to-use environment that allows you to run Claude Code in a container without installing Node.js and related dependencies locally.
 
+**🔥 Important: This project uses the API endpoint `https://api.moonshot.cn/anthropic` by default, optimized for users in mainland China to smoothly experience Vibe Coding (Claude Code's immersive CLI)!**
+
 Claude Code is Anthropic's official command-line interface tool that helps you:
 - Have interactive programming conversations with Claude AI
 - Get code suggestions and solutions
