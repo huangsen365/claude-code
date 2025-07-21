@@ -35,6 +35,8 @@ Claude Code 是 Anthropic 官方的命令行界面工具，可以帮助您：
 
 ### 1. 使用 Docker Hub 镜像（推荐）
 
+从 [Docker Hub](https://hub.docker.com/r/huangsen365/claude-code) 拉取并运行：
+
 ```bash
 docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code bash
 ```

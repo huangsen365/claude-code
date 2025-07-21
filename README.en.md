@@ -35,6 +35,8 @@ Claude Code is Anthropic's official command-line interface tool that helps you:
 
 ### 1. Using Docker Hub Image (Recommended)
 
+Pull and run from [Docker Hub](https://hub.docker.com/r/huangsen365/claude-code):
+
 ```bash
 docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code bash
 ```
