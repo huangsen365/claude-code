@@ -5,10 +5,12 @@ English | [中文](README.md)
 ## 🚀 Quick Start - One Command
 
 ```bash
-docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code bash
 ```
 
-> 💡 **Note**: You'll be prompted to enter your API Key after running. Please have your Moonshot API Key ready.
+Then run `claude` command inside the container to start Claude Code.
+
+> 💡 **Note**: The container will start with a bash shell. Run the `claude` command to start Claude Code. You'll then be prompted to enter your API Key. Please have your Moonshot API Key ready.
 
 ## Introduction
 
@@ -34,8 +36,10 @@ Claude Code is Anthropic's official command-line interface tool that helps you:
 ### 1. Using Docker Hub Image (Recommended)
 
 ```bash
-docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code bash
 ```
+
+Then run `claude` command inside the container to start Claude Code.
 
 ### 2. Building Local Image
 
@@ -52,7 +56,9 @@ docker run --rm -it \
   -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" \
   -w /root \
   --name my-claude-code \
-  claude-code claude
+  claude-code bash
+
+# Then run claude command inside the container
 ```
 
 ## Environment Variables
@@ -80,8 +86,10 @@ docker run --rm -it \
   -v /path/to/your/project:/workspace \
   -w /workspace \
   --name my-claude-code \
-  huangsen365/claude-code claude
+  huangsen365/claude-code bash
 ```
+
+Then run `claude` command inside the container.
 
 ### Using Different API Services
 
@@ -90,13 +98,17 @@ docker run --rm -it \
 docker run --rm -it \
   -w /root \
   --name my-claude-code \
-  huangsen365/claude-code claude
+  huangsen365/claude-code bash
 ```
+
+Then run `claude` command inside the container.
 
 #### Using Moonshot (Kimi K2 Compatible Service)
 ```bash
-docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code bash
 ```
+
+Then run `claude` command inside the container.
 
 ## Advanced Configuration
 
@@ -110,8 +122,10 @@ docker run --rm -it \
   -v ~/.config/claude:/root/.config/claude \
   -w /root \
   --name my-claude-code \
-  huangsen365/claude-code claude
+  huangsen365/claude-code bash
 ```
+
+Then run `claude` command inside the container.
 
 ### Docker Compose Usage
 
@@ -132,13 +146,15 @@ services:
     working_dir: /workspace
     stdin_open: true
     tty: true
-    command: claude
+    command: /bin/bash
 ```
 
 Run:
 ```bash
 docker-compose run --rm claude-code
 ```
+
+Then run `claude` command inside the container.
 
 ## FAQ
 

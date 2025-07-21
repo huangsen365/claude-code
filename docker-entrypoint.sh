@@ -74,13 +74,14 @@ if [ -z "$ANTHROPIC_AUTH_TOKEN" ]; then
             echo "Starting Claude Code... / 正在启动 Claude Code..."
             echo ""
             
-            # Countdown from 5
-            for i in 5 4 3 2 1; do
-                echo -ne "\r${GREEN}Starting in / 启动倒计时: $i${NC} "
-                sleep 1
-            done
-            echo -ne "\r${GREEN}Launching... / 启动中...     ${NC}"
+            # Show instructions instead of countdown
             echo ""
+            echo -e "${YELLOW}==================================================${NC}"
+            echo -e "${GREEN}Container is ready! / 容器已就绪！${NC}"
+            echo ""
+            echo -e "${BLUE}To start Claude Code, run: / 启动 Claude Code，请运行：${NC}"
+            echo -e "${YELLOW}claude${NC}"
+            echo -e "${YELLOW}==================================================${NC}"
             echo ""
         else
             echo "Exiting. / 退出。"

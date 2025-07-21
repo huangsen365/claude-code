@@ -5,10 +5,12 @@
 ## 🚀 一键快速体验
 
 ```bash
-docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code bash
 ```
 
-> 💡 **提示**: 运行后会提示输入 API Key，请准备好您的 Moonshot API Key
+然后在容器内运行 `claude` 命令启动 Claude Code。
+
+> 💡 **提示**: 容器启动后会进入 bash shell，然后运行 `claude` 命令启动 Claude Code。运行后会提示输入 API Key，请准备好您的 Moonshot API Key
 
 ## 介绍
 
@@ -34,8 +36,10 @@ Claude Code 是 Anthropic 官方的命令行界面工具，可以帮助您：
 ### 1. 使用 Docker Hub 镜像（推荐）
 
 ```bash
-docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code bash
 ```
+
+然后在容器内运行 `claude` 命令启动 Claude Code。
 
 ### 2. 构建本地镜像
 
@@ -52,7 +56,9 @@ docker run --rm -it \
   -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" \
   -w /root \
   --name my-claude-code \
-  claude-code claude
+  claude-code bash
+
+# 然后在容器内运行 claude 命令
 ```
 
 ## 环境变量
@@ -80,8 +86,10 @@ docker run --rm -it \
   -v /path/to/your/project:/workspace \
   -w /workspace \
   --name my-claude-code \
-  huangsen365/claude-code claude
+  huangsen365/claude-code bash
 ```
+
+然后在容器内运行 `claude` 命令。
 
 ### 使用不同的 API 服务
 
@@ -90,13 +98,17 @@ docker run --rm -it \
 docker run --rm -it \
   -w /root \
   --name my-claude-code \
-  huangsen365/claude-code claude
+  huangsen365/claude-code bash
 ```
+
+然后在容器内运行 `claude` 命令。
 
 #### 使用 Moonshot（Kimi K2 兼容服务）
 ```bash
-docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code claude
+docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w /root --name my-claude-code huangsen365/claude-code bash
 ```
+
+然后在容器内运行 `claude` 命令。
 
 ## 高级配置
 
@@ -110,8 +122,10 @@ docker run --rm -it \
   -v ~/.config/claude:/root/.config/claude \
   -w /root \
   --name my-claude-code \
-  huangsen365/claude-code claude
+  huangsen365/claude-code bash
 ```
+
+然后在容器内运行 `claude` 命令。
 
 ### Docker Compose 使用
 
@@ -132,13 +146,15 @@ services:
     working_dir: /workspace
     stdin_open: true
     tty: true
-    command: claude
+    command: /bin/bash
 ```
 
 运行：
 ```bash
 docker-compose run --rm claude-code
 ```
+
+然后在容器内运行 `claude` 命令。
 
 ## 常见问题
 
