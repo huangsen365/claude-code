@@ -16,6 +16,8 @@ docker run --rm -it -e ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic" -w
 
 Claude Code Docker 是一个封装了 Anthropic Claude Code CLI 工具的 Docker 镜像。它提供了一个即用型的环境，让您可以在容器中运行 Claude Code，而无需在本地安装 Node.js 和相关依赖。
 
+🔗 **项目仓库**: [https://github.com/huangsen365/claude-code](https://github.com/huangsen365/claude-code)
+
 **🔥 重要提示：本项目默认使用 API 端点 [https://platform.moonshot.cn/console/api-keys](https://platform.moonshot.cn/console/api-keys)，这是月之暗面发布的万亿参数模型 Kimi K2 提供的 Anthropic API 兼容服务，让中国大陆用户能够无缝体验 Vibe Coding（Claude Code 的沉浸式 CLI）！**
 
 Claude Code 是 Anthropic 官方的命令行界面工具，可以帮助您：
@@ -161,7 +163,9 @@ docker-compose run --rm claude-code
 ## 常见问题
 
 ### Q: 如何获取 Claude API 密钥？
-A: 请访问 [Anthropic Console](https://console.anthropic.com/) 注册并获取 API 密钥。
+A: 
+- **国际/境外用户**：请访问 [Anthropic Console](https://console.anthropic.com/) 注册并获取 API 密钥。
+- **国内用户**：请访问 [Moonshot Platform](https://platform.moonshot.cn/console/api-keys) 注册并获取 API 密钥。
 
 ### Q: 为什么使用 Moonshot 的 API URL？
 A: 月之暗面最近发布的万亿参数模型 Kimi K2 兼容了 Anthropic 的 API 格式，使得中国大陆用户可以无缝体验 Claude Code。这不是代理服务，而是直接的兼容实现。

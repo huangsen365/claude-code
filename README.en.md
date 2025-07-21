@@ -16,6 +16,8 @@ Then run `claude` command inside the container to start Claude Code.
 
 Claude Code Docker is a Docker image that packages Anthropic's Claude Code CLI tool. It provides a ready-to-use environment that allows you to run Claude Code in a container without installing Node.js and related dependencies locally.
 
+🔗 **Project Repository**: [https://github.com/huangsen365/claude-code](https://github.com/huangsen365/claude-code)
+
 **🔥 Important: This project uses the API endpoint [https://platform.moonshot.cn/console/api-keys](https://platform.moonshot.cn/console/api-keys) by default, which is Moonshot's Kimi K2 trillion-parameter model providing Anthropic API-compatible service, enabling seamless Claude Code experience for users in mainland China!**
 
 Claude Code is Anthropic's official command-line interface tool that helps you:
@@ -47,7 +49,7 @@ Then run `claude` command inside the container to start Claude Code.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/claude-code.git
+git clone https://github.com/huangsen365/claude-code.git
 cd claude-code
 
 # Build the image
@@ -161,7 +163,9 @@ Then run `claude` command inside the container.
 ## FAQ
 
 ### Q: How do I get a Claude API key?
-A: Please visit [Anthropic Console](https://console.anthropic.com/) to register and obtain an API key.
+A: 
+- **International/Overseas Users**: Please visit [Anthropic Console](https://console.anthropic.com/) to register and obtain an API key.
+- **China Mainland Users**: Please visit [Moonshot Platform](https://platform.moonshot.cn/console/api-keys) to register and obtain an API key.
 
 ### Q: Why use Moonshot's API URL?
 A: Moonshot recently released the trillion-parameter model Kimi K2, which is compatible with Anthropic's API format, allowing users in mainland China to seamlessly experience Claude Code. This is not a proxy service, but a direct compatible implementation.
