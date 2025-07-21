@@ -1,6 +1,6 @@
 # Claude Code Docker
 
-[English](README.en.md) | 中文
+[English](https://github.com/huangsen365/claude-code/blob/main/README.en.md) | 中文
 
 ## 🚀 一键快速体验
 
